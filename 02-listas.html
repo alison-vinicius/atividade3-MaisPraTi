@@ -4,7 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #57564F;
+            padding: 20px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        nav > li{
+            list-style: none;
+        }
+
+        
+        nav > li > a{
+            text-decoration: none;
+            color: white;
+        }
+
+         nav > li > a:hover{
+            color: #7A7A73;
+        }
+
+        .hobbies{
+            display:  flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            background-color: #7A7A73;
+            color: white;
+        }
+
+        .receita{
+            display:  flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            background-color: #DDDAD0;
+            color: white;
+            height: 100vh;
+            font-size: 20px;
+        }
+
+
+
+    </style>
 </head>
+
+
+
 <body>
 
     <header>
@@ -14,24 +71,36 @@
             <li><a href="https://www.receiteria.com.br/" target="_blank">Receiteria</a></li>
         </nav>
     </header>
-    <ul>
-        <li>jogar futebol</li>
-        <li>assistir série</li>
-        <li>andar de bicicleta</li>
-        <li>comer lasanha</li>
-        <li>resolver problemas de programação competitiva</li>
-    </ul>
 
-    <h1>receita pão com ovos - modo de preparo</h1>
-    <ol>
-        <li>Aqueça uma frigideira com um pouco de manteiga ou óleo.</li>
-        <li>Coloque as fatias de pão na frigideira e doure levemente dos dois lados.</li>
-        <li>Retire o pão e reserve.</li>
-        <li>Na mesma frigideira, quebre os ovos com cuidado.</li>
-        <li>Tempere com sal e pimenta a gosto.</li>
-        <li>Frite os ovos até o ponto desejado (gema mole ou dura).</li>
-        <li>Coloque os ovos sobre as fatias de pão.</li>
-    </ol>
+    <main>
+        <section class="hobbies">
+                <h1>Hobbies</h1>
+                <ul>
+                    <li>jogar futebol</li>
+                    <li>assistir série</li>
+                    <li>andar de bicicleta</li>
+                    <li>comer lasanha</li>
+                    <li>resolver problemas de programação competitiva</li>
+                </ul>
+        </section>
+
+        <section class="receita">
+            <h1>receita pão com ovos - modo de preparo</h1>
+            <ol>
+                <li>Aqueça uma frigideira com um pouco de manteiga ou óleo.</li>
+                <li>Coloque as fatias de pão na frigideira e doure levemente dos dois lados.</li>
+                <li>Retire o pão e reserve.</li>
+                <li>Na mesma frigideira, quebre os ovos com cuidado.</li>
+                <li>Tempere com sal e pimenta a gosto.</li>
+                <li>Frite os ovos até o ponto desejado (gema mole ou dura).</li>
+                <li>Coloque os ovos sobre as fatias de pão.</li>
+            </ol>
+
+        </section>
+    </main>
+    
+
+    
 
 </body>
 </html>
