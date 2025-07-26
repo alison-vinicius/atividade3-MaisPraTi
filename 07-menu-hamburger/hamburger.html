@@ -3,62 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Menu Hamburger</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    
-    nav {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-    }
-
-    .nav-links li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    
-    .hamburger {
-      display: none;
-      cursor: pointer;
-      font-size: 24px;
-      background: none;
-      border: none;
-      color: white;
-    }
-
-    
-    .nav-links.mobile {
-      display: none;
-      flex-direction: column;
-      margin-top: 10px;
-    }
-
-    
-    @media (max-width: 600px) {
-      .nav-links {
-        display: none;
-      }
-
-      .hamburger {
-        display: block;
-      }
-
-      .nav-links.mobile.show {
-        display: flex;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="hamburger.css">
 </head>
 <body>
 
@@ -79,12 +24,7 @@
     </ul>
   </nav>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("show");
-    }
-  </script>
+  <script src="hamburger.js"></script>
 
 </body>
 </html>
